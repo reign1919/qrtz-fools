@@ -43,7 +43,7 @@ function Nav({ current, total, score }) {
   return (
     <nav>
       <div className="font-headline" style={{ fontSize: '1.2rem', fontWeight: 900, fontStyle: 'italic', color: 'var(--primary)', letterSpacing: '-0.02em' }}>
-        Fool's Bloom
+        Mildly bullshit promo idea
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
         <div style={{ textAlign: 'right' }}>
@@ -70,13 +70,13 @@ function IntroScreen({ onStart }) {
           A Curated April Fools' Experience
         </div>
         <h1 className="font-headline anim-rise-1" style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', fontWeight: 900, letterSpacing: '-0.03em', lineHeight: 1.05, color: 'var(--on-surface)', marginBottom: '0.4rem' }}>
-          The <em style={{ color: 'var(--primary)' }}>Gentle</em>
+          The <em style={{ color: 'var(--primary)' }}>Mildly</em>
         </h1>
         <h1 className="font-headline anim-rise-1" style={{ fontSize: 'clamp(3.5rem, 10vw, 6rem)', fontWeight: 900, letterSpacing: '-0.03em', lineHeight: 1.05, color: 'var(--on-surface)', marginBottom: '2rem' }}>
-          Deception
+          bullshit promo idea
         </h1>
         <p className="anim-rise-2" style={{ color: 'var(--on-surface-variant)', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300, maxWidth: 460, margin: '0 auto 3rem' }}>
-          A journey through history's most sophisticated pranks. Ten questions stand between you and the grand reveal. Proceed with elegance.
+          A journey through history's most sophisticated pranks. Ten questions stand between you and the grand reveal. lemao
         </p>
         <button className="bloom-gradient btn-press anim-rise-3" onClick={onStart} style={{ color: 'white', border: 'none', borderRadius: '9999px', padding: '1.1rem 3rem', fontSize: '1rem', fontWeight: 800, cursor: 'pointer', letterSpacing: '0.02em', boxShadow: '0 8px 30px rgba(138,0,26,0.4), 0 0 60px rgba(255,179,177,0.1)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
           Begin the journey →
@@ -108,10 +108,10 @@ function YesOverlay() {
     const fire = (ratio, opts) => confetti({ origin: { y: 0.6 }, ...opts, particleCount: Math.floor(200 * ratio) });
     setTimeout(() => {
       fire(0.25, { spread: 26, startVelocity: 55, colors: ['#ffb3b1', '#e9c349', '#ffffff'] });
-      fire(0.2,  { spread: 60, colors: ['#ffb3b1', '#ff8fa0', '#ffeedd'] });
+      fire(0.2, { spread: 60, colors: ['#ffb3b1', '#ff8fa0', '#ffeedd'] });
       fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8, colors: ['#ffb3b1', '#e9c349', '#ffffff'] });
-      fire(0.1,  { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
-      fire(0.1,  { spread: 120, startVelocity: 45 });
+      fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+      fire(0.1, { spread: 120, startVelocity: 45 });
     }, 300);
     setTimeout(() => { fire(0.3, { spread: 70, colors: ['#ffb3b1', '#e9c349'] }); }, 1800);
     setTimeout(() => { fire(0.45, { spread: 130, startVelocity: 65, colors: ['#ffb3b1', '#e9c349', '#ffffff', '#ff8fa0'] }); }, 3200);
@@ -139,7 +139,7 @@ function YesOverlay() {
           plis send a ss of this to me, cuz idk what u selected, zanku 🙏
         </p>
         <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', animation: 'rise 0.7s var(--ease-out-expo) 700ms both', flexWrap: 'wrap' }}>
-          {['🌸','💐','🌼','💕','🎊','💕','🌼','💐','🌸'].map((e, i) => (
+          {['🌸', '💐', '🌼', '💕', '🎊', '💕', '🌼', '💐', '🌸'].map((e, i) => (
             <span key={i} style={{ fontSize: '1.6rem' }}>{e}</span>
           ))}
         </div>
@@ -152,12 +152,12 @@ function AprilFoolsOverlay({ onBack }) {
   return (
     <div className="fools-overlay">
       <div className="fools-text">GET APRIL<br />FOOL'D LMAO L</div>
-      <p className="fools-sub">you walked right into that one 💀</p>
+      <p className="fools-sub">bro really thought</p>
       <button onClick={onBack} style={{ marginTop: '3rem', background: 'transparent', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.5)', borderRadius: '9999px', padding: '0.7rem 2rem', fontSize: '0.85rem', cursor: 'pointer', fontFamily: 'Plus Jakarta Sans, sans-serif', transition: 'all 200ms ease' }}
         onMouseOver={e => { e.currentTarget.style.borderColor = 'rgba(255,61,61,0.5)'; e.currentTarget.style.color = '#ff6b6b'; }}
         onMouseOut={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.5)'; }}
       >
-        ← go back and reconsider
+        ← exit
       </button>
     </div>
   );
@@ -214,7 +214,7 @@ function ProposalCard({ onYes, onNo, onChaosTrigger }) {
           <h2 className="font-headline anim-rise-1" style={{ fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 900, letterSpacing: '-0.03em', lineHeight: 1.1, color: 'var(--on-surface)', marginBottom: '0.3rem' }}>Will you be my</h2>
           <h2 className="font-headline anim-rise-1" style={{ fontSize: 'clamp(2.5rem, 7vw, 4.5rem)', fontWeight: 900, letterSpacing: '-0.03em', lineHeight: 1.1, color: 'var(--primary)', fontStyle: 'italic', marginBottom: '2rem' }}>girlfriend?</h2>
           <p className="anim-rise-2" style={{ color: 'var(--on-surface-variant)', fontSize: '1.05rem', lineHeight: 1.75, fontWeight: 300, maxWidth: 420, margin: '0 auto 3rem' }}>
-            Life is full of pranks and small deceptions — but my love for you is the only thing that's undeniably real.
+            :3
           </p>
 
           <div className="anim-rise-3" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', position: 'relative', minHeight: 90 }}>

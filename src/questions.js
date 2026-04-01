@@ -67,6 +67,6 @@ export const questions = [
     id: 10,
     isProposal: true,
     question: "Will you be my girlfriend?",
-    fact: "Life is full of pranks and small deceptions — but my love for you is the only thing that's undeniably real.",
+    fact: ":3",
   },
 ];
